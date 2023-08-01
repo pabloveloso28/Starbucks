@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Starbucks</title>
+</head>
+
+<body>
+
+    <div class="circle"></div>
+
+    <header>
+        <a href="#"><img src="./assets/logo.png" class="logo"></a>
+
+    </header>
+
+
+    <div class="container">
+        <div class="textBox">
+
+
+            <h2>It` not just Coffe <br> it`s <span> Starbucks </span> </h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto minima iure assumenda, placeat
+                quos
+                voluptates a earum delectus. Magnam amet impedit fuga, quod totam aliquam veniam.
+            </p>
+            <button>Learn More</button>
+        </div>
+
+        <div>
+            <img href="#" src="./assets/img1.png" class="starbucks">
+        </div>
+    </div>
+
+
+
+    <div class="thumbStarbucks">
+        <img  src="./assets/thumb1.png" class="thumb" onclick="thumbTwo('./assets/img1.png'); colorThumb('#017143') ">
+        <img  src="./assets/thumb2.png" class="thumb" onclick="thumbTwo('./assets/img2.png'); colorThumb('#eb7495') ">
+        <img  src="./assets/thumb3.png" class="thumb" onclick="thumbTwo('./assets/img3.png'); colorThumb('#d752b1') ">
+    </div>
+</body>
+<script>
+
+
+let img = document.querySelector(".starbucks")
+let circle = document.querySelector(".circle")
+
+
+function thumbTwo(image){
+
+img.src = image
+
+}
+
+function colorThumb(color){
+
+ circle.style.background = color
+
+}
+
+</script>
+
+</html>
